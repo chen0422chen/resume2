@@ -22,6 +22,65 @@ $(function(){
 
 	$(".backtop").backTop();
 	//$(".backtop") 返回按钮父容器 
+// 向下滚动
+$(".sanjiao").click(function () {
+        $({dNum:0}).animate({dNum:700},{
+            duration:1000,
+            step: function () {
+                $(window).scrollTop(this.dNum);
+            }
+        })
+    });
+
+$("nav .nav li:eq(0)").click(function (){
+	$({num:$(window).scrollTop()}).animate({num:0},{
+		duration:1000,
+		step:function(){
+			$(window).scrollTop(this.num);
+			}
+		})
+	});
+$("nav .nav li:eq(1)").click(function (){
+	$({num:$(window).scrollTop()}).animate({num:700},{
+		duration:700,
+		step:function(){
+			$(window).scrollTop(this.num);
+			}
+		})
+	});
+$("nav .nav li:eq(2)").click(function (){
+	$({num:$(window).scrollTop()}).animate({num:1300},{
+		duration:700,
+		step:function(){
+			$(window).scrollTop(this.num);
+			}
+		})
+	});
+$("nav .nav li:eq(3)").click(function (){
+	$({num:$(window).scrollTop()}).animate({num:2000},{
+		duration:700,
+		step:function(){
+			$(window).scrollTop(this.num);
+			}
+		})
+	});
+$("nav .nav li:eq(4)").click(function (){
+	$({num:$(window).scrollTop()}).animate({num:3500},{
+		duration:700,
+		step:function(){
+			$(window).scrollTop(this.num);
+			}
+		})
+	});
+
+
+
+
+
+
+
+
+
 
 
 })

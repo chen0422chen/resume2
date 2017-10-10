@@ -96,9 +96,10 @@ header .content .sanjiao img{
 	border-right: 40px solid transparent;*/
 	/*动画*/
 	animation:move 1s infinite;
+	cursor: pointer;
+
 }
 @keyframes move{/*制作动效*/
-	0%{margin:-top:20px;}/*起点*/
 	50%{margin-top:60px;}/*中点*/
 	100%{margin-top:20px;}/*终点*/
 }
@@ -241,6 +242,9 @@ header .content .sanjiao img{
 	height: 40px;
 	/*background: green;*/
 	margin: 0 auto;
+}
+.works_box .tab .anniu_box .anniu1{
+	background: #4eb2d6;
 }
 .works_box .tab .anniu_box .anniu{
 	width: 78px;
