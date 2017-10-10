@@ -32,11 +32,3 @@ $.fn.extend({
 	}
 
 })
-
-
-
-
-$(function(){
-	$(".backtop").backTop();
-	//$(".backtop") 返回按钮父容器     
-}) 
